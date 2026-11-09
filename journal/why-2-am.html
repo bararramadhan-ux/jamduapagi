@@ -1,47 +1,305 @@
-<style>
-  .photo-gallery {
-    max-width: 680px;
-    margin: 35px 0 45px;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-  .gallery-track {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    border-radius: 3px;
-  }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  .gallery-track::-webkit-scrollbar {
-    display: none;
-  }
+  <title>Why 2 AM? — jamduapagi.</title>
 
-  .gallery-track img {
-    min-width: 100%;
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    object-fit: cover;
-    scroll-snap-align: start;
-  }
+  <link rel="stylesheet" href="../style.css">
 
-  .gallery-dots {
-    display: flex;
-    justify-content: center;
-    gap: 9px;
-    margin-top: 16px;
-  }
+  <style>
+    /* ARTICLE PAGE */
 
-  .gallery-dots button {
-    width: 6px;
-    height: 6px;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    background: #555;
-    cursor: pointer;
-  }
+    .journal-section {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
 
-  .gallery-dots button.active {
-    background: #e8e3d9;
-  }
-</style>
+    .journal-entry {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 65px;
+      color: #99958d;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      transition: 0.3s;
+    }
+
+    .back-link:hover {
+      color: #e8e3d9;
+    }
+
+    /* PHOTO GALLERY */
+
+    .photo-gallery {
+      max-width: 680px;
+      margin: 45px 0;
+    }
+
+    .gallery-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      border-radius: 3px;
+    }
+
+    .gallery-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    .gallery-track img {
+      min-width: 100%;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      scroll-snap-align: start;
+    }
+
+    .gallery-dots {
+      display: flex;
+      justify-content: center;
+      gap: 9px;
+      margin-top: 16px;
+    }
+
+    .gallery-dots button {
+      width: 6px;
+      height: 6px;
+      padding: 0;
+      border: none;
+      border-radius: 50%;
+      background: #555;
+      cursor: pointer;
+    }
+
+    .gallery-dots button.active {
+      background: #e8e3d9;
+    }
+
+    @media (max-width: 600px) {
+      .journal-section {
+        padding-top: 75px;
+        padding-bottom: 75px;
+      }
+
+      .photo-gallery {
+        margin: 35px 0;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- HEADER -->
+
+  <header>
+
+    <a href="../index.html" class="logo">
+      jamduapagi.
+    </a>
+
+    <nav>
+      <a href="../index.html#home">Home</a>
+      <a href="./index.html">Journal</a>
+      <a href="../index.html#moments">Moments</a>
+      <a href="../index.html#about">About</a>
+    </nav>
+
+  </header>
+
+
+  <!-- ARTICLE -->
+
+  <section class="journal-section">
+
+    <article class="journal-entry">
+
+      <p class="eyebrow">JOURNAL — 001</p>
+
+      <div class="article-meta">
+        <span>PERSONAL</span>
+        <span>·</span>
+        <span>2 MIN READ</span>
+      </div>
+
+      <h3>Why 2 AM?</h3>
+
+      <p class="article-subtitle">
+        An introduction to this little corner of mine.
+      </p>
+
+
+      <div class="article-body">
+
+        <p>
+          I've always found something interesting about the
+          hours between midnight and morning.
+        </p>
+
+        <p>
+          The idea of this website actually came from a song
+          and an album by LOMBA SIHIR called
+          <em>Obrolan Jam 3 Pagi</em>. It made me think about
+          those hours when the world seems to slow down,
+          but life never really stops.
+        </p>
+
+        <p>I started wondering about people.</p>
+
+        <p>
+          What are they doing at this hour? Are they working,
+          having conversations, making memories, or simply
+          lying awake with thoughts they can't seem to put away?
+        </p>
+
+        <p>
+          Somewhere out there, people are living completely
+          different lives at the exact same moment. They have
+          their own stories, struggles, little victories, and
+          things they rarely tell anyone.
+        </p>
+
+        <p>And somehow, I find that thought fascinating.</p>
+
+        <p>
+          That's where the name <em>jamduapagi</em> came from.
+        </p>
+
+        <p>
+          I wanted to create a little space of my own.
+          Somewhere I could share things I find interesting,
+          thoughts that cross my mind, music I enjoy,
+          things I learn, and little pieces of my life
+          that I want to keep.
+        </p>
+
+        <p>But I don't want this place to be only about me.</p>
+
+        <p>
+          Perhaps, someday, it could become a place where
+          other people can share their thoughts too. Where
+          strangers can exchange stories, discover new things,
+          and have conversations they might not find elsewhere.
+        </p>
+
+        <p>
+          I don't really know what this little corner will become.
+        </p>
+
+        <p>
+          I'm still figuring things out, just like everyone else.
+        </p>
+
+        <p>But for now, I'm happy to start somewhere.</p>
+
+        <p>And if you've somehow found your way here, well...</p>
+
+        <p class="article-ending">
+          You're still awake?
+        </p>
+
+        <p class="welcome-ending">
+          Welcome to jamduapagi.
+        </p>
+
+      </div>
+
+
+      <!-- PHOTO GALLERY -->
+
+      <div class="photo-gallery">
+
+        <div class="gallery-track" id="galleryTrack">
+
+          <img
+            src="../images/why-2-am-1.jpg"
+            alt="A quiet moment at night"
+          >
+
+          <img
+            src="../images/why-2-am-2.jpg"
+            alt="Another moment worth remembering"
+          >
+
+        </div>
+
+        <div class="gallery-dots">
+
+          <button class="active" aria-label="Photo 1"></button>
+
+          <button aria-label="Photo 2"></button>
+
+        </div>
+
+      </div>
+
+
+      <!-- BACK TO JOURNAL -->
+
+      <a href="./index.html" class="back-link">
+        ← Back to Journal
+      </a>
+
+    </article>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>Made somewhere between awake and asleep.</p>
+
+    <p>© 2026 jamduapagi.</p>
+
+  </footer>
+
+
+  <!-- GALLERY SCRIPT -->
+
+  <script>
+
+    const track = document.getElementById("galleryTrack");
+    const dots = document.querySelectorAll(".gallery-dots button");
+
+    dots.forEach((dot, index) => {
+
+      dot.addEventListener("click", () => {
+
+        track.scrollTo({
+          left: track.clientWidth * index,
+          behavior: "smooth"
+        });
+
+      });
+
+    });
+
+    track.addEventListener("scroll", () => {
+
+      const index = Math.round(
+        track.scrollLeft / track.clientWidth
+      );
+
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
