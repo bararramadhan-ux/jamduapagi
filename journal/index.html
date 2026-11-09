@@ -4,52 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Journal — jamduapagi.</title>
-
   <link rel="stylesheet" href="../style.css">
-
   <style>
     .archive-container {
       max-width: 850px;
       margin: 0 auto;
       padding: 70px 24px;
     }
-
     .archive-intro {
       max-width: 680px;
       margin-bottom: 70px;
     }
-
     .archive-intro h1 {
       font-size: clamp(40px, 7vw, 60px);
       font-weight: normal;
       margin: 15px 0;
     }
-
     .archive-intro p {
       color: #99958d;
       font-family: Arial, sans-serif;
       font-size: 14px;
       line-height: 1.9;
     }
-
     .archive-list {
       max-width: 680px;
     }
-
     .archive-item {
       padding: 35px 0;
       border-top: 1px solid #292929;
     }
-
     .archive-image {
       display: block;
       width: 100%;
-      aspect-ratio: 16 / 9;
+      max-width: 340px;
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       margin-bottom: 25px;
       border-radius: 3px;
     }
-
     .archive-meta {
       display: flex;
       gap: 10px;
@@ -58,13 +50,11 @@
       letter-spacing: 2px;
       color: #99958d;
     }
-
     .archive-item h2 {
       font-size: 30px;
       font-weight: normal;
       margin: 17px 0;
     }
-
     .archive-item p {
       font-family: Arial, sans-serif;
       color: #99958d;
@@ -72,7 +62,6 @@
       line-height: 1.9;
       margin-bottom: 22px;
     }
-
     .read-link {
       color: #e8e3d9;
       text-decoration: none;
@@ -80,90 +69,67 @@
       font-size: 10px;
       letter-spacing: 2px;
     }
-
     .read-link:hover {
       color: #99958d;
     }
-
     @media (max-width: 600px) {
       .archive-container {
         padding: 50px 22px;
       }
+      .archive-image {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
-
 <body>
-
   <header>
     <a href="../index.html" class="logo">jamduapagi.</a>
-
-    <nav>
-      <a href="../index.html#home">Home</a>
-      <a href="./index.html">Journal</a>
-      <a href="../index.html#moments">Moments</a>
-      <a href="../index.html#about">About</a>
-    </nav>
+<nav>
+  <a href="../index.html#home">Home</a>
+  <a href="./index.html">Journal</a>
+  <a href="../index.html#moments">Moments</a>
+  <a href="../index.html#about">About</a>
+</nav>
   </header>
-
-
   <main class="archive-container">
-
-    <div class="archive-intro">
-
-      <p class="eyebrow">A COLLECTION OF THOUGHTS</p>
-
-      <h1>Journal.</h1>
-
-      <p>
-        Little thoughts, stories, discoveries, and things
-        worth keeping. Written somewhere between awake
-        and asleep.
-      </p>
-
+<div class="archive-intro">
+  <p class="eyebrow">A COLLECTION OF THOUGHTS</p>
+  <h1>Journal.</h1>
+  <p>
+    Little thoughts, stories, discoveries, and things
+    worth keeping. Written somewhere between awake
+    and asleep.
+  </p>
+</div>
+<div class="archive-list">
+  <article class="archive-item">
+    <img
+      class="archive-image"
+      src="../images/IMG_7620.jpeg"
+      alt="Cover photo for Why 2 AM."
+      loading="lazy"
+    >
+    <div class="archive-meta">
+      <span>001</span>
+      <span>·</span>
+      <span>PERSONAL</span>
     </div>
-
-
-    <div class="archive-list">
-
-      <!-- JOURNAL 001 -->
-      <article class="archive-item">
-
-        <img
-          class="archive-image"
-          src="../images/IMG_7620.jpeg"
-          alt="Cover photo for Why 2 AM."
-        >
-
-        <div class="archive-meta">
-          <span>001</span>
-          <span>·</span>
-          <span>PERSONAL</span>
-        </div>
-
-        <h2>Why 2 AM?</h2>
-
-        <p>
-          An introduction to this little corner of mine.
-          A thought about the hours between midnight
-          and morning, and the people living through them.
-        </p>
-
-        <a class="read-link" href="why-2-am.html">
-          READ ARTICLE →
-        </a>
-
-      </article>
-
-    </div>
-
+    <h2>Why 2 AM?</h2>
+    <p>
+      An introduction to this little corner of mine.
+      A thought about the hours between midnight
+      and morning, and the people living through them.
+    </p>
+    <a class="read-link" href="why-2-am.html">
+      READ ARTICLE →
+    </a>
+  </article>
+</div>
   </main>
-
-
   <footer>
     <p>Made somewhere between awake and asleep.</p>
     <p>© 2026 jamduapagi.</p>
   </footer>
-
 </body>
 </html>
