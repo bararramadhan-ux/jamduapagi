@@ -300,5 +300,67 @@ footer .logo {
     footer {
         padding: 50px 7%;
     }
+    /* JOURNAL */
+
+.journal-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.journal-heading {
+  margin-bottom: 80px;
+}
+
+.journal-entry {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.article-meta {
+  display: flex;
+  gap: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #858078;
+  margin-bottom: 25px;
+}
+
+.journal-entry h3 {
+  font-size: clamp(35px, 6vw, 52px);
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+.article-subtitle {
+  color: #858078;
+  font-style: italic;
+  margin-bottom: 55px;
+}
+
+.article-body {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  color: #b5b0a7;
+}
+
+.article-body p {
+  margin-bottom: 25px;
+}
+
+.article-ending {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-style: italic;
+  color: #e8e3d9;
+  margin-top: 45px;
+}
+
+.welcome-ending {
+  font-family: Georgia, serif;
+  color: #e8e3d9;
+  font-size: 18px;
+}
 
 }
