@@ -1,133 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Why 2 AM? — jamduapagi.</title>
+<style>
+  .photo-gallery {
+    max-width: 680px;
+    margin: 35px 0 45px;
+  }
 
-  <link rel="stylesheet" href="../style.css">
-</head>
+  .gallery-track {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    border-radius: 3px;
+  }
 
-<body>
+  .gallery-track::-webkit-scrollbar {
+    display: none;
+  }
 
-  <header>
-    <a href="../index.html" class="logo">jamduapagi.</a>
+  .gallery-track img {
+    min-width: 100%;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    scroll-snap-align: start;
+  }
 
-    <nav>
-      <a href="../index.html#home">Home</a>
-      <a href="./index.html">Journal</a>
-      <a href="../index.html#moments">Moments</a>
-      <a href="../index.html#about">About</a>
-    </nav>
-  </header>
+  .gallery-dots {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 16px;
+  }
 
+  .gallery-dots button {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background: #555;
+    cursor: pointer;
+  }
 
-  <section class="journal-section">
-
-    <div class="journal-entry">
-
-      <p class="eyebrow">JOURNAL — 001</p>
-
-      <div class="article-meta">
-        <span>PERSONAL</span>
-        <span>·</span>
-        <span>2 MIN READ</span>
-      </div>
-
-      <h3>Why 2 AM?</h3>
-
-      <p class="article-subtitle">
-        An introduction to this little corner of mine.
-      </p>
-
-
-      <div class="article-body">
-
-        <p>
-          I've always found something interesting about the
-          hours between midnight and morning.
-        </p>
-
-        <p>
-          The idea of this website actually came from a song
-          and an album by LOMBA SIHIR called
-          <em>Obrolan Jam 3 Pagi</em>. It made me think about
-          those hours when the world seems to slow down,
-          but life never really stops.
-        </p>
-
-        <p>I started wondering about people.</p>
-
-        <p>
-          What are they doing at this hour? Are they working,
-          having conversations, making memories, or simply
-          lying awake with thoughts they can't seem to put away?
-        </p>
-
-        <p>
-          Somewhere out there, people are living completely
-          different lives at the exact same moment. They have
-          their own stories, struggles, little victories, and
-          things they rarely tell anyone.
-        </p>
-
-        <p>And somehow, I find that thought fascinating.</p>
-
-        <p>That's where the name <em>jamduapagi</em> came from.</p>
-
-        <p>
-          I wanted to create a little space of my own.
-          Somewhere I could share things I find interesting,
-          thoughts that cross my mind, music I enjoy,
-          things I learn, and little pieces of my life
-          that I want to keep.
-        </p>
-
-        <p>But I don't want this place to be only about me.</p>
-
-        <p>
-          Perhaps, someday, it could become a place where
-          other people can share their thoughts too. Where
-          strangers can exchange stories, discover new things,
-          and have conversations they might not find elsewhere.
-        </p>
-
-        <p>
-          I don't really know what this little corner will become.
-        </p>
-
-        <p>I'm still figuring things out, just like everyone else.</p>
-
-        <p>But for now, I'm happy to start somewhere.</p>
-
-        <p>And if you've somehow found your way here, well...</p>
-
-        <p class="article-ending">
-          You're still awake?
-        </p>
-
-        <p class="welcome-ending">
-          Welcome to jamduapagi.
-        </p>
-
-      </div>
-
-      <p style="margin-top: 65px;">
-        <a href="./index.html"
-           style="color: #99958d; text-decoration: none;">
-          ← Back to Journal
-        </a>
-      </p>
-
-    </div>
-
-  </section>
-
-
-  <footer>
-    <p>Made somewhere between awake and asleep.</p>
-    <p>© 2026 jamduapagi.</p>
-  </footer>
-
-</body>
-</html>
+  .gallery-dots button.active {
+    background: #e8e3d9;
+  }
+</style>
