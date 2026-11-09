@@ -263,6 +263,12 @@ footer {
   font-size: 11px;
   line-height: 2;
 }
+footer {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
 /* =========================
