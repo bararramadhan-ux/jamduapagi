@@ -1,32 +1,26 @@
 /* =========================
    GLOBAL
 ========================= */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
   background: #101010;
   color: #e8e3d9;
   font-family: Georgia, serif;
+  text-align: center;
 }
-
 .hidden {
   display: none !important;
 }
-
-
 /* =========================
    OPENING SCREEN
 ========================= */
-
 .intro {
   position: fixed;
   inset: 0;
@@ -38,12 +32,10 @@ body {
   text-align: center;
   transition: opacity 1s ease, visibility 1s ease;
 }
-
 .intro-content {
   padding: 25px;
   animation: appear 1.5s ease;
 }
-
 .time {
   font-family: Arial, sans-serif;
   font-size: 11px;
@@ -51,28 +43,24 @@ body {
   color: #77736c;
   margin-bottom: 35px;
 }
-
 .intro h1 {
   font-size: clamp(38px, 8vw, 65px);
   font-weight: normal;
   letter-spacing: -2px;
   margin-bottom: 45px;
 }
-
 .intro h2 {
   font-size: clamp(21px, 4vw, 29px);
   font-weight: normal;
   font-style: italic;
   margin-bottom: 17px;
 }
-
 .intro-text {
   font-family: Arial, sans-serif;
   color: #99958d;
   font-size: 13px;
   line-height: 1.8;
 }
-
 #enterButton {
   margin-top: 42px;
   padding: 13px 35px;
@@ -84,12 +72,10 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
-
 #enterButton:hover {
   background: #e8e3d9;
   color: #101010;
 }
-
 .small-note {
   margin-top: 25px;
   font-family: Arial, sans-serif;
@@ -97,248 +83,206 @@ body {
   color: #68645e;
   font-style: italic;
 }
-
 .intro.hide {
   opacity: 0;
   visibility: hidden;
 }
-
-
 /* =========================
    HEADER & NAVIGATION
 ========================= */
-
 header {
   padding: 30px 8%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #292929;
+  text-align: center;
 }
-
 .logo {
   color: #e8e3d9;
   text-decoration: none;
   font-size: 22px;
+  text-align: center;
 }
-
 nav {
   display: flex;
   gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
-
 nav a {
   color: #99958d;
   text-decoration: none;
   font-family: Arial, sans-serif;
   font-size: 12px;
   transition: 0.3s;
+  text-align: center;
 }
-
 nav a:hover {
   color: white;
 }
-
-
 /* =========================
    SECTIONS
 ========================= */
-
 section {
   padding: 110px 12%;
   border-bottom: 1px solid #292929;
+  text-align: center;
 }
-
 .hero {
   min-height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
-
 .eyebrow {
   font-family: Arial, sans-serif;
   font-size: 10px;
   letter-spacing: 3px;
   color: #858078;
   margin-bottom: 25px;
+  text-align: center;
 }
-
 section h1 {
   font-size: clamp(38px, 7vw, 70px);
   font-weight: normal;
   line-height: 1.15;
   margin-bottom: 25px;
+  text-align: center;
 }
-
 section h2 {
   font-size: clamp(25px, 5vw, 40px);
   font-weight: normal;
   margin-bottom: 20px;
+  text-align: center;
 }
-
 section > p:not(.eyebrow) {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.9;
   color: #99958d;
   max-width: 550px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
-
-
 /* =========================
    JOURNAL
 ========================= */
-
 .journal-section {
   padding-top: 100px;
   padding-bottom: 100px;
+  text-align: center;
 }
-
 .journal-heading {
   margin-bottom: 80px;
+  text-align: center;
 }
-
 .journal-entry {
   max-width: 680px;
   margin: 0 auto;
+  text-align: center;
 }
-
 .article-meta {
   display: flex;
   gap: 12px;
+  justify-content: center;
+  align-items: center;
   font-family: Arial, sans-serif;
   font-size: 10px;
   letter-spacing: 2px;
   color: #858078;
   margin-bottom: 25px;
+  text-align: center;
 }
-
 .journal-entry h3 {
   font-size: clamp(35px, 6vw, 52px);
   font-weight: normal;
   margin-bottom: 12px;
+  text-align: center;
 }
-
 .article-subtitle {
   color: #858078;
   font-style: italic;
   margin-bottom: 55px;
+  text-align: center;
 }
-
 .article-body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 2;
   color: #b5b0a7;
+  text-align: center;
 }
-
 .article-body p {
   margin-bottom: 25px;
+  text-align: center;
 }
-
 .article-ending {
   font-family: Georgia, serif;
   font-size: 24px;
   font-style: italic;
   color: #e8e3d9;
   margin-top: 45px;
+  text-align: center;
 }
-
 .welcome-ending {
   font-family: Georgia, serif;
   color: #e8e3d9;
   font-size: 18px;
+  text-align: center;
 }
-
-
 /* =========================
    FOOTER
 ========================= */
-
 footer {
   padding: 35px 12%;
   color: #77736c;
   font-family: Arial, sans-serif;
   font-size: 11px;
   line-height: 2;
-}
-footer {
   text-align: center;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
 }
-
-
 /* =========================
    ANIMATION
 ========================= */
-
 @keyframes appear {
   from {
     opacity: 0;
     transform: translateY(15px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
-
 /* =========================
    MOBILE
 ========================= */
-
 @media (max-width: 600px) {
-
   header {
     flex-direction: column;
     gap: 20px;
   }
-
   nav {
     gap: 17px;
+    flex-wrap: wrap;
   }
-
   nav a {
     font-size: 11px;
   }
-
   section {
     padding: 85px 8%;
   }
-
   .journal-heading {
     margin-bottom: 55px;
   }
-
-   /* CENTER ALL TEXT */
-
-body {
-  text-align: center;
-}
-
-section,
-header,
-footer {
-  text-align: center;
-}
-
-/* Center headings and paragraphs */
-h1, h2, h3, h4,
-p,
-.eyebrow,
-a {
-  text-align: center;
-}
-
-/* Center content containers */
-section {
-  margin-left: auto;
-  margin-right: auto;
-}
-
+  .article-meta {
+    flex-wrap: wrap;
+  }
+  .article-body {
+    font-size: 13px;
+  }
 }
