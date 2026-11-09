@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,37 +9,53 @@
   <link rel="stylesheet" href="../style.css">
 
   <style>
-    /* ARTICLE PAGE */
+    body {
+      background: #101010;
+      color: #e8e3d9;
+    }
 
     .journal-section {
-      padding-top: 100px;
-      padding-bottom: 100px;
+      padding: 100px 24px;
     }
 
     .journal-entry {
       max-width: 680px;
-      margin: 0 auto;
+      margin: auto;
     }
 
-    .back-link {
-      display: inline-block;
-      margin-top: 65px;
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 3px;
       color: #99958d;
-      text-decoration: none;
-      font-family: Arial, sans-serif;
-      font-size: 12px;
-      transition: 0.3s;
     }
 
-    .back-link:hover {
-      color: #e8e3d9;
+    .article-meta {
+      display: flex;
+      gap: 10px;
+      margin: 25px 0 15px;
+      font-size: 10px;
+      letter-spacing: 1.5px;
+      color: #888;
     }
 
-    /* PHOTO GALLERY */
+    .journal-entry h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(34px, 7vw, 52px);
+      font-weight: normal;
+      margin-bottom: 12px;
+    }
+
+    .article-subtitle {
+      color: #99958d;
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+
+    /* GALLERY */
 
     .photo-gallery {
-      max-width: 680px;
-      margin: 45px 0;
+      width: 100%;
+      margin: 35px 0 50px;
     }
 
     .gallery-track {
@@ -56,7 +71,7 @@
     }
 
     .gallery-track img {
-      min-width: 100%;
+      flex: 0 0 100%;
       width: 100%;
       aspect-ratio: 16 / 9;
       object-fit: cover;
@@ -84,30 +99,59 @@
       background: #e8e3d9;
     }
 
-    @media (max-width: 600px) {
-      .journal-section {
-        padding-top: 75px;
-        padding-bottom: 75px;
-      }
+    /* ARTICLE BODY */
 
-      .photo-gallery {
-        margin: 35px 0;
-      }
+    .article-body {
+      font-family: Georgia, serif;
+      font-size: 16px;
+      line-height: 1.9;
+      color: #d0ccc3;
     }
 
+    .article-body p {
+      margin-bottom: 25px;
+    }
+
+    .article-ending {
+      color: #e8e3d9;
+      font-style: italic;
+    }
+
+    .welcome-ending {
+      color: #e8e3d9;
+      margin-top: 35px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 55px;
+      color: #99958d;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    .back-link:hover {
+      color: #e8e3d9;
+    }
+
+    @media (max-width: 600px) {
+      .journal-section {
+        padding: 75px 22px;
+      }
+
+      .article-body {
+        font-size: 15px;
+      }
+    }
   </style>
 </head>
-
 
 <body>
 
   <!-- HEADER -->
 
   <header>
-
-    <a href="../index.html" class="logo">
-      jamduapagi.
-    </a>
+    <a href="../index.html" class="logo">jamduapagi.</a>
 
     <nav>
       <a href="../index.html#home">Home</a>
@@ -115,7 +159,6 @@
       <a href="../index.html#moments">Moments</a>
       <a href="../index.html#about">About</a>
     </nav>
-
   </header>
 
 
@@ -133,12 +176,40 @@
         <span>2 MIN READ</span>
       </div>
 
-      <h3>Why 2 AM?</h3>
+      <h1>Why 2 AM?</h1>
 
       <p class="article-subtitle">
         An introduction to this little corner of mine.
       </p>
 
+
+      <!-- PHOTO GALLERY -->
+
+      <div class="photo-gallery">
+
+        <div class="gallery-track" id="galleryTrack">
+
+          <img
+            src="../images/IMG_7620.jpeg"
+            alt="A moment captured at night"
+          >
+
+          <img
+            src="../images/IMG_7623.jpeg"
+            alt="Another moment worth remembering"
+          >
+
+        </div>
+
+        <div class="gallery-dots">
+          <button class="active" aria-label="Photo 1"></button>
+          <button aria-label="Photo 2"></button>
+        </div>
+
+      </div>
+
+
+      <!-- ARTICLE CONTENT -->
 
       <div class="article-body">
 
@@ -216,37 +287,6 @@
       </div>
 
 
-      <!-- PHOTO GALLERY -->
-
-      <div class="photo-gallery">
-
-        <div class="gallery-track" id="galleryTrack">
-
-          <img
-            src="../images/why-2-am-1.jpg"
-            alt="A quiet moment at night"
-          >
-
-          <img
-            src="../images/why-2-am-2.jpg"
-            alt="Another moment worth remembering"
-          >
-
-        </div>
-
-        <div class="gallery-dots">
-
-          <button class="active" aria-label="Photo 1"></button>
-
-          <button aria-label="Photo 2"></button>
-
-        </div>
-
-      </div>
-
-
-      <!-- BACK TO JOURNAL -->
-
       <a href="./index.html" class="back-link">
         ← Back to Journal
       </a>
@@ -259,11 +299,8 @@
   <!-- FOOTER -->
 
   <footer>
-
     <p>Made somewhere between awake and asleep.</p>
-
     <p>© 2026 jamduapagi.</p>
-
   </footer>
 
 
