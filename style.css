@@ -315,4 +315,30 @@ footer {
     margin-bottom: 55px;
   }
 
+   /* CENTER ALL TEXT */
+
+body {
+  text-align: center;
+}
+
+section,
+header,
+footer {
+  text-align: center;
+}
+
+/* Center headings and paragraphs */
+h1, h2, h3, h4,
+p,
+.eyebrow,
+a {
+  text-align: center;
+}
+
+/* Center content containers */
+section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 }
