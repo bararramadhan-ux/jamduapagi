@@ -1,12 +1,20 @@
-// Welcome message
+const enterButton = document.getElementById("enterButton");
+const intro = document.getElementById("intro");
+const mainContent = document.getElementById("mainContent");
 
-console.log("Welcome to jamduapagi.");
+if (enterButton && intro && mainContent) {
+  enterButton.addEventListener("click", () => {
+    intro.classList.add("hide");
 
-// Display current year automatically
+    setTimeout(() => {
+      intro.style.display = "none";
+      mainContent.classList.remove("hidden");
+    }, 1000);
+  });
+}
 
-const copyright = document.querySelector(".copyright");
+const year = document.getElementById("year");
 
-if (copyright) {
-    copyright.textContent =
-        `© ${new Date().getFullYear()} jamduapagi. All rights reserved.`;
+if (year) {
+  year.textContent = new Date().getFullYear();
 }
